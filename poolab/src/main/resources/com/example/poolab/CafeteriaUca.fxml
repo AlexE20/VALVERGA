@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="761.0" prefWidth="1288.0" style="-fx-background-color: #ff4500;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.poolab.CafeteriaController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="446.0" layoutY="17.0" prefHeight="75.0" prefWidth="351.0" text="Cafeteria UCA">
+         <font>
+            <Font size="55.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="7.0" layoutY="126.0" prefHeight="447.0" prefWidth="1267.0" style="-fx-background-color: #FFA07A;">
+         <children>
+            <Label layoutX="175.0" layoutY="92.0" text="Cantidad">
+               <font>
+                  <Font name="Times New Roman" size="19.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="29.0" layoutY="10.0" prefHeight="206.0" prefWidth="533.0" style="-fx-background-color: FF8989; -fx-background-radius: 20;">
+               <children>
+                  <ImageView fx:id="fotoLasagna" fitHeight="150.0" fitWidth="200.0" layoutX="218.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Lasagna.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="27.0" layoutY="17.0" text="Cantidad">
+                     <font>
+                        <Font name="Times New Roman" size="19.0" />
+                     </font>
+                  </Label>
+                  <Spinner fx:id="CantidadLas" layoutX="11.0" layoutY="56.0" style="-fx-background-radius: 20;" />
+                  <Label layoutX="25.0" layoutY="105.0" text="Subtotal">
+                     <font>
+                        <Font name="Times New Roman" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtSubtotalLasagna" layoutX="24.0" layoutY="166.0" text="\$0.00">
+                     <font>
+                        <Font name="Times New Roman" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="276.0" layoutY="15.0" prefHeight="27.0" prefWidth="188.0" text="Lasagna">
+                     <font>
+                        <Font name="Times New Roman" size="23.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="685.0" layoutY="12.0" prefHeight="206.0" prefWidth="530.0" style="-fx-background-color: FF8989; -fx-background-radius: 20;">
+               <children>
+                  <Label layoutX="27.0" layoutY="17.0" text="Cantidad">
+                     <font>
+                        <Font name="Times New Roman" size="19.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="fotoRes" fitHeight="150.0" fitWidth="200.0" layoutX="315.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Carne.jpg" />
+                     </image>
+                  </ImageView>
+                  <Spinner fx:id="CantidadRe" layoutX="8.0" layoutY="59.0" style="-fx-background-radius: 20;" />
+                  <Label layoutX="16.0" layoutY="105.0" text="Subtotal">
+                     <font>
+                        <Font name="Times New Roman" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtSubtotalRes" layoutX="25.0" layoutY="161.0" text="\$0.00">
+                     <font>
+                        <Font name="Times New Roman" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="344.0" layoutY="7.0" text="Res">
+                     <font>
+                        <Font name="Times New Roman" size="23.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="26.0" layoutY="230.0" prefHeight="206.0" prefWidth="538.0" style="-fx-background-color: FF8989; -fx-background-radius: 20;">
+               <children>
+                  <Label layoutX="27.0" layoutY="17.0" text="Cantidad">
+                     <font>
+                        <Font name="Times New Roman" size="19.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="fotoAlitas" fitHeight="150.0" fitWidth="200.0" layoutX="232.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Poio.jpg" />
+                     </image>
+                  </ImageView>
+                  <Spinner fx:id="CantidadAl" layoutX="5.0" layoutY="62.0" style="-fx-background-radius: 20;" />
+                  <Label layoutX="37.0" layoutY="107.0" text="Subtotal">
+                     <font>
+                        <Font name="Times New Roman" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtSubtotalAlitas" layoutX="38.0" layoutY="158.0" text="\$0.00">
+                     <font>
+                        <Font name="Times New Roman" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="301.0" layoutY="12.0" text="Alitas">
+                     <font>
+                        <Font name="Times New Roman" size="23.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="684.0" layoutY="233.0" prefHeight="206.0" prefWidth="550.0" style="-fx-background-color: FF8989; -fx-background-radius: 20;">
+               <children>
+                  <Label layoutX="27.0" layoutY="17.0" text="Cantidad">
+                     <font>
+                        <Font name="Times New Roman" size="19.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="fotoVegetales" fitHeight="150.0" fitWidth="200.0" layoutX="301.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Verduras.jpg" />
+                     </image>
+                  </ImageView>
+                  <Spinner fx:id="CantidadVeg" layoutX="9.0" layoutY="64.0" style="-fx-background-radius: 20;" />
+                  <Label layoutX="19.0" layoutY="107.0" text="Subtotal">
+                     <font>
+                        <Font name="Times New Roman" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtSubtotalVegetales" layoutX="29.0" layoutY="155.0" text="\$0.00">
+                     <font>
+                        <Font name="Times New Roman" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="333.0" layoutY="12.0" text="Vegetales">
+                     <font>
+                        <Font name="Times New Roman" size="23.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+      <ImageView fitHeight="134.0" fitWidth="74.0" layoutX="338.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../Downloads/uca.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="51.0" layoutY="586.0" prefHeight="150.0" prefWidth="217.0" style="-fx-background-color: #fff; -fx-background-radius: 30;">
+         <children>
+            <RadioButton fx:id="RBEmpleado" layoutX="12.0" layoutY="36.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="142.0" text="Empleado">
+               <toggleGroup>
+                  <ToggleGroup fx:id="tipoClienteGroup" />
+               </toggleGroup></RadioButton>
+            <Label layoutX="15.0" layoutY="-3.0" text="Tipo de cliente">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="RBEstudiante" layoutX="10.0" layoutY="79.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="131.0" text="Estudiante" toggleGroup="$tipoClienteGroup" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="374.0" layoutY="585.0" prefHeight="150.0" prefWidth="217.0" style="-fx-background-color: #fff; -fx-background-radius: 30;">
+         <children>
+            <RadioButton fx:id="RBEfectivo" layoutX="12.0" layoutY="36.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="142.0" text="Efectivo">
+               <toggleGroup>
+                  <ToggleGroup fx:id="formaPagoGroup" />
+               </toggleGroup></RadioButton>
+            <Label layoutX="14.0" layoutY="1.0" text="Forma de pago">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="RBTarjeta" layoutX="10.0" layoutY="79.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="131.0" text="Tarjeta" toggleGroup="$formaPagoGroup" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="totalCompra" layoutX="728.0" layoutY="578.0" prefHeight="166.0" prefWidth="466.0" style="-fx-background-color: #fff; -fx-background-radius: 30;">
+         <children>
+            <Label layoutX="56.0" layoutY="26.0" prefHeight="24.0" prefWidth="112.0" text="Nombre">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtNombre" layoutX="158.0" layoutY="24.0" prefHeight="26.0" prefWidth="250.0" style="-fx-background-radius: 20;" />
+            <Label layoutX="175.0" layoutY="70.0" text="Total">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtTotal" layoutX="251.0" layoutY="70.0" text="\$0.00">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="Limpiar" layoutX="149.0" layoutY="123.0" mnemonicParsing="false" style="-fx-background-color: FF4343;" text="Limpiar" />
+            <Button fx:id="Comprar" layoutX="254.0" layoutY="122.0" mnemonicParsing="false" style="-fx-background-color: FF4343;" text="Comprar" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
